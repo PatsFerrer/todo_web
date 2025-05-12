@@ -22,7 +22,7 @@ export const AuthEndpoints = {
 };
 
 export const UserEndpoints = {
-  createUser: `${API_URL}/users`,
+  createUser: `${API_URL}/${VERSION}/user`,
 };
 
 export const TodoEndpoints = {
