@@ -4,8 +4,8 @@ import { AuthLayout } from "@/components/layouts/auth-layout";
 export default function RegisterPage() {
   return (
     <AuthLayout
-      title="Create an account"
-      description="Enter your details to create a new account"
+      title="Crie uma conta"
+      description="Insira seus dados para criar uma nova conta"
     >
       <RegisterForm />
     </AuthLayout>

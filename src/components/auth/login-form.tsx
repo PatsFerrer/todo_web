@@ -14,6 +14,7 @@ import { MESSAGES, ROUTES } from "@/constants";
 import { authService } from "@/lib/services/auth-service";
 import { LoginFormData, loginSchema } from "@/schemas/loginSchema";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { Loader } from "lucide-react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
@@ -60,7 +61,7 @@ export function LoginForm() {
             <FormItem>
               <FormLabel>Username</FormLabel>
               <FormControl>
-                <Input placeholder="Enter your username" {...field} />
+                <Input placeholder="Nome de Usuário" {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -71,13 +72,9 @@ export function LoginForm() {
           name="password"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Password</FormLabel>
+              <FormLabel>Senha</FormLabel>
               <FormControl>
-                <Input
-                  type="password"
-                  placeholder="Enter your password"
-                  {...field}
-                />
+                <Input type="password" placeholder="••••••••" {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -88,7 +85,7 @@ export function LoginForm() {
           className="w-full bg-purple-600 text-white hover:bg-purple-700 dark:bg-purple-600 dark:hover:bg-purple-500 cursor-pointer"
           disabled={isLoading}
         >
-          {isLoading ? "Logging in..." : "Login"}
+          {isLoading ? <Loader className="animate-spin w-4 h-4" /> : "Entrar"}
         </Button>
         <div className="text-center text-sm">
           Don&apos;t have an account?{" "}
@@ -96,7 +93,7 @@ export function LoginForm() {
             href={ROUTES.REGISTER}
             className="font-medium text-purple-600 hover:text-purple-500 dark:text-purple-400 dark:hover:text-purple-300"
           >
-            Register
+            Registrar
           </Link>
         </div>
       </form>

@@ -4,8 +4,8 @@ import { AuthLayout } from "@/components/layouts/auth-layout";
 export default function LoginPage() {
   return (
     <AuthLayout
-      title="Welcome back"
-      description="Enter your credentials to access your account"
+      title="Bem-vindo(a) de volta"
+      description="Insira suas credenciais para acessar sua conta"
     >
       <LoginForm />
     </AuthLayout>
