@@ -26,8 +26,8 @@ export const UserEndpoints = {
 };
 
 export const TodoEndpoints = {
-  getTodos: `${API_URL}/todos`,
-  createTodo: `${API_URL}/todos`,
-  updateTodo: (id: string) => `${API_URL}/todos/${id}`,
-  deleteTodo: (id: string) => `${API_URL}/todos/${id}`,
+  getTodos: `${API_URL}/${VERSION}/todo`,
+  createTodo: `${API_URL}/${VERSION}/todo`,
+  updateTodo: (id: string) => `${API_URL}/${VERSION}/todo/status/${id}`,
+  deleteTodo: (id: string) => `${API_URL}/${VERSION}/todo/${id}`,
 };
