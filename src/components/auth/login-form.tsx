@@ -88,7 +88,7 @@ export function LoginForm() {
           {isLoading ? <Loader className="animate-spin w-4 h-4" /> : "Entrar"}
         </Button>
         <div className="text-center text-sm">
-          Don&apos;t have an account?{" "}
+          Não tem uma conta?{" "}
           <Link
             href={ROUTES.REGISTER}
             className="font-medium text-purple-600 hover:text-purple-500 dark:text-purple-400 dark:hover:text-purple-300"

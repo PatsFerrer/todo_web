@@ -7,8 +7,9 @@ import { Toaster } from "sonner";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "TaskFlow | Manage Your Tasks Efficiently",
-  description: "A modern TODO list application to manage your daily tasks",
+  title: "TaskFlow | Gerencie suas tarefas com eficiência",
+  description:
+    "Um aplicativo moderno de lista de tarefas para gerenciar suas tarefas diárias",
 };
 
 export default function RootLayout({
